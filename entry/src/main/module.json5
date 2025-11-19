@@ -13,16 +13,6 @@
     "pages": "$profile:main_pages",
     "requestPermissions": [
       {
-        "name": "ohos.permission.LOCATION_IN_BACKGROUND",
-        "reason": "$string:permission_microphone",
-        "usedScene": {
-          "abilities": [
-            "EntryAbility"
-          ],
-          "when": "always"
-        }
-      },
-      {
         "name": "ohos.permission.APPROXIMATELY_LOCATION",
         "reason": "$string:permission_reason_read_health_data",
         "usedScene": {

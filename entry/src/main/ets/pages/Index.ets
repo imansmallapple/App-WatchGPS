@@ -45,13 +45,13 @@ struct Index {
       'locatingTimeoutMs': 10000
     }
     try {
-      geoLocationManager.getCurrentLocation(request).then((result) => { // 调用getCurrentLocation获取当前设备位置，通过promise接收上报的位置
+      geoLocationManager.getCurrentLocation(request).then((result) => {
         console.log('current location: ' + JSON.stringify(result));
 
         console.log('current location translated: ' + toDMS(result.latitude, CoordinateType.LATITUDE) + ", "
           + toDMS(result.longitude, CoordinateType.LONGITUDE));
       })
-        .catch((error: BusinessError) => { // 接收上报的错误码
+        .catch((error: BusinessError) => {
           console.error('promise, getCurrentLocation: error=' + JSON.stringify(error));
         });
     } catch (err) {
